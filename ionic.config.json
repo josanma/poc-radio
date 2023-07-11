@@ -1,0 +1,7 @@
+{
+  "name": "radio jardin amistad",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
