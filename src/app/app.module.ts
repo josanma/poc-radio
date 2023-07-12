@@ -4,7 +4,6 @@ import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {Media} from "@awesome-cordova-plugins/media/ngx";
@@ -12,7 +11,7 @@ import {Media} from "@awesome-cordova-plugins/media/ngx";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot()],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, Media],
   bootstrap: [AppComponent],
 })

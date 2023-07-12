@@ -1,3 +1,21 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <button *ngIf="!isPlaying" ion-button (click)="playAudio()">Play</button>
+    <button *ngIf="isPlaying" ion-button (click)="pauseAudio()">Pause</button>
+
+  </div>
+</ion-content>
